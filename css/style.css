@@ -205,12 +205,15 @@ button {
     justify-content: space-between;
     background-color: #fff;
     border-radius: 3px;
-    padding: 43px 50px;
+    padding: 3% 4%;
 }
 
+.short-info{
+    margin-right: 3%;
+}
 .poster{
     display: block;
-    margin-top: -80px;
+    margin-top: -40%;
     margin-bottom: 19px;
 }
 
@@ -246,12 +249,21 @@ button {
 .full-info{
     flex: 0.97;
 }
+.tabs{
+    display: flex;
+    align-items: center;
+    margin-bottom: 4%;
+}
 .tabs-item{
     color: #000;
     text-decoration: none;
-    margin-right: 40px;
+    
     font-size: 18px;
     line-height: 21px;
+}
+
+.tabs-item:not(:last-child){
+    margin-right: 4%;
 }
 
 .tabs-item-activ{
@@ -261,8 +273,12 @@ button {
 /*full-content*/
 
 .text{
+    margin-top: 0;
     color: black;
     margin-bottom: 35px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
 }
 .text-title{
     color: black;
@@ -275,4 +291,139 @@ button {
 
 .tabs-content{
     margin-right: 30px;
+}
+
+
+.subscribe-title{
+    color: #000000;
+font-size: 16px;
+font-weight: 900;
+line-height: 24px;
+    margin-bottom: 14px;
+    margin-top: 0;
+}
+
+.subscribe-form{
+    display: flex;
+    margin-bottom: 48px;
+}
+.subscribe-input{
+    width: 175px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    background-color: rgba(196, 196, 196, 0.5);
+    padding: 12px 18px;
+    border: none;
+    color: #aeaeae;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.subscribe-btn{
+    background-color: #ff8f27;
+    border-radius: 0 5px 5px 0;
+    border: none;
+    padding: 12px;
+}
+
+
+
+@media (max-width: 1115px) {
+    .tabs-item{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container{
+        max-width: 800px;
+    }
+    .tabs{
+        flex-wrap: wrap;
+        
+    }
+    .tabs-item{
+        flex-basis: 20%;
+        line-height: 2;
+    }
+    .full-content{
+        flex-wrap: wrap;
+    }
+    .tabs-content{
+        margin-bottom: 5%;
+    }
+    .text{
+        font-size: 14px;
+    }
+    .actors{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px){
+    body{
+        background-size: 150%;
+    }
+    .container{
+        max-width: 540px;
+    }
+   
+    .more{
+        display: none;
+    }
+    .tabs-item{
+        flex-basis: 45%;
+    }
+    .tabs-content{
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 578px){
+    body{
+        background-size: 250%;
+    }
+    .container{
+        width: 90%;
+    }
+    .header{
+        flex-wrap: wrap;
+    }
+    .search{
+        flex-basis: 100%;
+        order: 3;
+        margin-top: 6%;
+    }
+    .content{
+        flex-wrap: wrap;
+
+    }
+    .short-info{
+        margin-bottom: 5%;
+        margin-right: 0;
+    }
+    .actors-title{
+        display: none;
+    }
+    .actors{
+        display: none;
+    }
+    .movie-info{
+        flex-wrap: wrap;
+    }
+    .trailer{
+        flex-basis: 100%;
+        margin-top: 10%;
+    }
+    .poster{
+        margin-top: -20%;
+        display: inline-block;
+        width: 100%;
+    }
+    .play{
+        width: 100%;
+    }
+    .subscribe{
+       padding-left: 10%;
+    }
 }
